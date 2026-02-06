@@ -8,14 +8,15 @@ import {
   type ReactNode,
 } from "react";
 import type { CrawlResult } from "@/lib/crawler";
+import SAMPLE_DATA_JSON from "./SAMPLE_DATA_JSON.json";
 
-export interface FlowMapperState {
+export interface CrawlerState {
   url: string;
   email: string;
   password: string;
 }
 
-interface FlowMapperContextValue {
+interface CrawlerContextValue {
   url: string;
   email: string;
   password: string;
@@ -28,9 +29,9 @@ interface FlowMapperContextValue {
   crawlError: string | null;
 }
 
-const FlowMapperContext = createContext<FlowMapperContextValue | null>(null);
+const CrawlerContext = createContext<CrawlerContextValue | null>(null);
 
-export function FlowMapperProvider({ children }: { children: ReactNode }) {
+export function CrawlerProvider({ children }: { children: ReactNode }) {
   const [url, setUrl] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -44,6 +45,10 @@ export function FlowMapperProvider({ children }: { children: ReactNode }) {
     setCrawlError(null);
     setCrawlResult(null);
     try {
+      setCrawlResult(
+        JSON.parse(JSON.stringify(SAMPLE_DATA_JSON)) as CrawlResult
+      );
+      return;
       const res = await fetch("/api/crawl", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -72,18 +77,18 @@ export function FlowMapperProvider({ children }: { children: ReactNode }) {
         return;
       }
       setCrawlResult(data as CrawlResult);
-      console.log("[FlowMapper] Crawl result:", data);
+      console.log("[Crawler] Crawl result:", data);
     } catch (err) {
       const message = err instanceof Error ? err.message : "Crawl failed";
       setCrawlError(message);
-      console.error("[FlowMapper] Crawl error:", err);
+      console.error("[Crawler] Crawl error:", err);
     } finally {
       setIsCrawling(false);
     }
   }, [url, email, password]);
 
   return (
-    <FlowMapperContext.Provider
+    <CrawlerContext.Provider
       value={{
         url,
         email,
@@ -98,14 +103,14 @@ export function FlowMapperProvider({ children }: { children: ReactNode }) {
       }}
     >
       {children}
-    </FlowMapperContext.Provider>
+    </CrawlerContext.Provider>
   );
 }
 
-export function useFlowMapper() {
-  const ctx = useContext(FlowMapperContext);
+export function useCrawler() {
+  const ctx = useContext(CrawlerContext);
   if (!ctx) {
-    throw new Error("useFlowMapper must be used within FlowMapperProvider");
+    throw new Error("useCrawler must be used within CrawlerProvider");
   }
   return ctx;
 }

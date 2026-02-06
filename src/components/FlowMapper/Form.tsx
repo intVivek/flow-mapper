@@ -3,7 +3,7 @@
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { useFlowMapper } from "./FlowMapperContext";
+import { useCrawler } from "@/store/useCrawler";
 
 export function Form() {
   const {
@@ -15,7 +15,7 @@ export function Form() {
     setPassword,
     submit,
     isCrawling,
-  } = useFlowMapper();
+  } = useCrawler();
 
   return (
     <div className="flex min-h-full w-full items-center justify-center p-4">
@@ -52,8 +52,12 @@ export function Form() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <Button className="mt-1 h-9" onClick={submit} disabled={isCrawling}>
-              {isCrawling ? "Crawling…" : "Map"}
+            <Button
+              className="mt-1 h-9"
+              onClick={submit}
+              disabled={isCrawling || !url}
+            >
+              {isCrawling ? "Crawling…" : "Crawl"}
             </Button>
           </div>
         </CardContent>

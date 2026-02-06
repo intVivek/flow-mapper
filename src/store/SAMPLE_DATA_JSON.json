@@ -1,0 +1,3298 @@
+{
+    "pages": [
+        {
+            "url": "https://www.trupeer.ai/",
+            "title": "Trupeer | AI-Powered Product Videos & Documentation in Minutes"
+        },
+        {
+            "url": "https://www.trupeer.ai/customer-stories",
+            "title": "Customer Success Stories | Why teams love Trupeer"
+        },
+        {
+            "url": "https://www.trupeer.ai/pricing",
+            "title": "Pricing | Simple & Scalable Plans for AI Video & Documentation | Trupeer AI"
+        },
+        {
+            "url": "https://www.trupeer.ai/affiliate",
+            "title": "Best AI Affiliate Program | Earn Recurring SaaS Commissions with Trupeer AI"
+        },
+        {
+            "url": "https://www.trupeer.ai/video",
+            "title": "Free AI Video Editor with documentation | Trupeer AI"
+        },
+        {
+            "url": "https://www.trupeer.ai/documentation",
+            "title": "Documentation Tool Software | Generate How-To Guides & SOP in minutes"
+        },
+        {
+            "url": "https://www.trupeer.ai/translation",
+            "title": "Translate Videos & Docs accurately with AI | Multi-language Support | Trupeer AI"
+        },
+        {
+            "url": "https://www.trupeer.ai/knowledge-base",
+            "title": "Knowledge Base Software & Hosted Help Center for you"
+        },
+        {
+            "url": "https://www.trupeer.ai/releases",
+            "title": "Trupeer | AI-Powered Product Videos & Documentation in Minutes"
+        },
+        {
+            "url": "https://www.trupeer.ai/contact-us",
+            "title": "Trupeer | AI-Powered Product Videos & Documentation in Minutes"
+        },
+        {
+            "url": "https://www.trupeer.ai/usecases/training-videos",
+            "title": "Trupeer | AI-Powered Product Videos & Documentation in Minutes"
+        },
+        {
+            "url": "https://www.trupeer.ai/usecases/pre-sales",
+            "title": "Trupeer | AI-Powered Product Videos & Documentation in Minutes"
+        },
+        {
+            "url": "https://www.trupeer.ai/usecases/product-marketing",
+            "title": "Trupeer | AI-Powered Product Videos & Documentation in Minutes"
+        },
+        {
+            "url": "https://www.trupeer.ai/usecases/customer-success",
+            "title": "Trupeer | AI-Powered Product Videos & Documentation in Minutes"
+        },
+        {
+            "url": "https://www.trupeer.ai/usecases/sales-enablement",
+            "title": "Trupeer | AI-Powered Product Videos & Documentation in Minutes"
+        },
+        {
+            "url": "https://www.trupeer.ai/usecases/change-management",
+            "title": "Trupeer | AI-Powered Product Videos & Documentation in Minutes"
+        },
+        {
+            "url": "https://www.trupeer.ai/blog",
+            "title": "AI Video Creation & Product Documentation Blog | Trupeer"
+        },
+        {
+            "url": "https://www.trupeer.ai/tutorials",
+            "title": "Step-by-Step Guides & How-to videos created with Trupeer AI | Tutorials | Learn with Trupeer"
+        },
+        {
+            "url": "https://www.trupeer.ai/tools",
+            "title": "Free AI Tools for Video & Documentation | Trupeer AI"
+        },
+        {
+            "url": "https://www.trupeer.ai/glossary",
+            "title": "AI Video & Documentation glossary | Essential Terms & Concepts"
+        }
+    ],
+    "edges": [
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/customer-stories/siigo-client-onboarding-with-personalised-demo-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/customer-stories/scaling-gtm-content-for-a-fire-safety-software"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/customer-stories/how-nspire-augmented-their-knowledge-library"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/customer-stories/lambda-test"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/customer-stories/ema"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/customer-stories/zetwerk"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/customer-stories/hedrick-gardner"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/customer-stories",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/pricing",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/affiliate",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/video",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/documentation",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/translation",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/knowledge-base",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/releases/introducing-custom-glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/releases/introducing-custom-pronunciations"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/releases",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/contact-us",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/training-videos",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/pre-sales",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/product-marketing",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/customer-success",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/sales-enablement",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/usecases/change-management",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/saas-black-friday-sale-2025"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/product-video-creation"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/best-knowledge-base-examples"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/all-about-how-to-videos-5-tips-tools-and-techniques"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/how-to-prep-for-a-software-demo-presentation-with-confidence"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/how-to-create-effective-video-sops"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/how-to-write-a-how-to-guide"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/5-tips-for-creating-killer-product-demos"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/16-best-product-demo-examples-that-you-need-to-copy"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/what-is-a-knowledge-base-and-why-you-need-one"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/19-best-examples-of-customer-onboarding-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/standard-operating-procedure-templates"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/how-to-become-instructional-designer"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/create-instructional-video"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/steps-for-software-implementation"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/customer-onboarding-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/create-personalized-sales-demos"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/how-to-videos-examples"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/announce-saas-product-updates"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/customer-education"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/instructional-design-certificates"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/8-instructional-design-models-to-use-in-2025"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/what-is-instructional-design"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/repurpose-demo-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/blog",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/tutorials/how-to-find-zoom-meeting-id"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/tutorials/how-to-add-emojis-in-figma"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/tutorials/how-to-flip-image-in-figma"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/tutorials/how-to-delete-posts-on-linkedin"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/tutorials/how-to-delete-a-board-in-jira"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/tutorials/enable-ruler-in-excel"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/tutorials/subscript-in-notion"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/tutorials/undo-component-in-figma"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/tutorials/use-slice-tool-in-figma"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/tutorials/make-copy-of-figma-file"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/tutorials/download-figma-file-as-pdf"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/tutorials/how-to-keep-top-row-visible-in-excel"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/tutorials",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/tools/job-aid-generator"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/tools/user-guide-manual-creator"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/tools/santa-video-generator"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/tools/create-training-videos-in-minutes"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/tools/create-your-own-custom-ai-avatar-video"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/tools/ai-talking-head-video-generator"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/tools/create-engaging-videos-with-an-ai-spokesperson"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/tools/convert-voice-to-ai-video-in-minutes"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/tools/create-a-free-text-to-speech-avatar"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/tools",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/customer-stories"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/pricing"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/affiliate"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/glossary/live2d-vtuber-avatar"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/glossary/on-screen-captions-ai"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/glossary/veed-ai-avatars"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/glossary/a-roll"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/glossary/add-ai-voiceover-to-video"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/glossary/affordable-ai-avatar-generator-comparison"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/glossary/affordable-business-ai-avatars"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/glossary/affordable-digital-avatars"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/glossary/affordable-ai-avatar-services-for-startups"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/glossary/low-cost-ai-avatars-for-events"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/video"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/documentation"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/translation"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/knowledge-base"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/releases"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/contact-us"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/usecases/training-videos"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/usecases/pre-sales"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/usecases/product-marketing"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/usecases/customer-success"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/usecases/sales-enablement"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/usecases/change-management"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/blog"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/tutorials"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/tools"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/glossary"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/translate"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/integrations"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/affiliates-ali/events"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/solutions"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/blog/loom-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/blog/camtasia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/blog/guidde-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/blog/best-scribehow-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/blog/synthesia-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/blog/best-screenstudio-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/blog/descript-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/blog/screenpal-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/blog/veed-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/blog/tango-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/blog/best-vidyard-alternatives"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/privacy-policy"
+        },
+        {
+            "from": "https://www.trupeer.ai/glossary",
+            "to": "https://www.trupeer.ai/terms-and-conditions"
+        }
+    ]
+}

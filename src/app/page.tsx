@@ -1,4 +1,4 @@
-import FlowMapper from "@/components/FlowMapper";
+import FlowMapper, { useCrawler } from "@/components/FlowMapper";
 
 export default function Page() {
   return (
