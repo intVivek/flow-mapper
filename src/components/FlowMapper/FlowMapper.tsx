@@ -2,14 +2,14 @@
 
 import { CrawlerProvider, useCrawler } from "@/store/useCrawler";
 import { Form } from "./Form";
+import Visualize from "./Visualize";
 
 function FlowResultView() {
   const { crawlResult } = useCrawler();
 
-  console.log(crawlResult);
   return (
     <div className="w-full h-full">
-      {crawlResult ? <div>Flow diagram UI will go here</div> : <Form />}
+      {crawlResult ? <Visualize /> : <Form />}
     </div>
   );
 }
