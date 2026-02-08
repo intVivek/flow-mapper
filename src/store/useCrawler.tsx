@@ -5,10 +5,10 @@ import {
   useContext,
   useState,
   useCallback,
+  useRef,
   type ReactNode,
 } from "react";
 import type { CrawlResult } from "@/lib/crawler";
-import SAMPLE_DATA_JSON from "./SAMPLE_DATA_JSON.json";
 
 export interface CrawlerState {
   url: string;
@@ -20,13 +20,24 @@ interface CrawlerContextValue {
   url: string;
   email: string;
   password: string;
+  maxPages: number;
+  maxTime: number;
   setUrl: (url: string) => void;
   setEmail: (email: string) => void;
   setPassword: (password: string) => void;
+  setMaxPages: (n: number) => void;
+  setMaxTime: (n: number) => void;
   submit: () => void;
+  cancel: () => void;
   isCrawling: boolean;
   crawlResult: CrawlResult | null;
+  liveCrawlResult: CrawlResult | null;
   crawlError: string | null;
+  currentCrawlPage: string | null;
+  currentCrawlRoutes: string[];
+  pagesCrawledCount: number;
+  crawlStartTimeMs: number | null;
+  crawlDurationMs: number | null;
 }
 
 const CrawlerContext = createContext<CrawlerContextValue | null>(null);
@@ -35,20 +46,57 @@ export function CrawlerProvider({ children }: { children: ReactNode }) {
   const [url, setUrl] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [maxPages, setMaxPages] = useState(20);
+  const [maxTime, setMaxTime] = useState(120);
   const [isCrawling, setIsCrawling] = useState(false);
   const [crawlResult, setCrawlResult] = useState<CrawlResult | null>(null);
+  const [liveCrawlResult, setLiveCrawlResult] = useState<CrawlResult | null>(
+    null
+  );
   const [crawlError, setCrawlError] = useState<string | null>(null);
+  const [currentCrawlPage, setCurrentCrawlPage] = useState<string | null>(null);
+  const [currentCrawlRoutes, setCurrentCrawlRoutes] = useState<string[]>([]);
+  const [pagesCrawledCount, setPagesCrawledCount] = useState(0);
+  const [crawlStartTimeMs, setCrawlStartTimeMs] = useState<number | null>(null);
+  const [crawlDurationMs, setCrawlDurationMs] = useState<number | null>(null);
+  const abortControllerRef = useRef<AbortController | null>(null);
+
+  const cancel = useCallback(() => {
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+      abortControllerRef.current = null;
+    }
+    setLiveCrawlResult(null);
+    setCurrentCrawlPage(null);
+    setCurrentCrawlRoutes([]);
+    setIsCrawling(false);
+    setCrawlStartTimeMs(null);
+  }, []);
+
+  function pageTitleFromUrl(pageUrl: string): string {
+    try {
+      const p = new URL(pageUrl).pathname;
+      return p === "/" ? "/" : p.replace(/\/$/, "") || pageUrl;
+    } catch {
+      return pageUrl;
+    }
+  }
 
   const submit = useCallback(async () => {
     if (!url.trim()) return;
+    abortControllerRef.current = new AbortController();
+    const signal = abortControllerRef.current.signal;
     setIsCrawling(true);
     setCrawlError(null);
     setCrawlResult(null);
+    const startMs = Date.now();
+    setCrawlDurationMs(null);
+    setCrawlStartTimeMs(startMs);
+    setLiveCrawlResult({ pages: [], edges: [] });
+    setCurrentCrawlPage(null);
+    setCurrentCrawlRoutes([]);
+    setPagesCrawledCount(0);
     try {
-      // setCrawlResult(
-      //   JSON.parse(JSON.stringify(SAMPLE_DATA_JSON)) as CrawlResult
-      // );
-      // return;
       const res = await fetch("/api/crawl", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -56,36 +104,102 @@ export function CrawlerProvider({ children }: { children: ReactNode }) {
           url: url.trim(),
           email: email.trim() || undefined,
           password: password.trim() || undefined,
+          maxPages,
+          maxTime,
         }),
+        signal,
       });
-      const text = await res.text();
-      let data: CrawlResult | { error?: string };
-      try {
-        data = text
-          ? (JSON.parse(text) as CrawlResult | { error?: string })
-          : {};
-      } catch {
-        setCrawlError(
-          res.ok
-            ? "Invalid response from server"
-            : `Server error (${res.status}). Check the API route and server logs.`
-        );
+      if (!res.ok || !res.body) {
+        const text = await res.text();
+        let errMsg = "Crawl failed";
+        try {
+          const data = text ? JSON.parse(text) : {};
+          if (typeof (data as { error?: string }).error === "string")
+            errMsg = (data as { error: string }).error;
+        } catch {
+          /* ignore */
+        }
+        setCrawlError(errMsg);
+        setLiveCrawlResult(null);
+        setIsCrawling(false);
         return;
       }
-      if (!res.ok) {
-        setCrawlError((data as { error?: string }).error ?? "Crawl failed");
-        return;
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split("\n");
+        buffer = lines.pop() ?? "";
+        for (const line of lines) {
+          if (!line.trim()) continue;
+          try {
+            const event = JSON.parse(line) as
+              | { type: "progress"; page: string; routes: string[] }
+              | { type: "result"; data: CrawlResult }
+              | { type: "error"; error: string };
+            if (event.type === "progress") {
+              const page = event.page;
+              const routes = event.routes ?? [];
+              setCurrentCrawlPage(page);
+              setCurrentCrawlRoutes(routes);
+              setPagesCrawledCount((n) => n + 1);
+              setLiveCrawlResult((prev) => ({
+                pages: [
+                  ...(prev?.pages ?? []),
+                  { url: page, title: pageTitleFromUrl(page) },
+                ],
+                edges: [
+                  ...(prev?.edges ?? []),
+                  ...routes.map((to) => ({ from: page, to })),
+                ],
+              }));
+            } else if (event.type === "result") {
+              setCrawlResult(event.data);
+              setCrawlDurationMs(Date.now() - startMs);
+              console.log("[Crawler] Crawl result:", event.data);
+            } else if (event.type === "error") {
+              setCrawlError(event.error ?? "Crawl failed");
+            }
+          } catch {
+            /* skip malformed line */
+          }
+        }
       }
-      setCrawlResult(data as CrawlResult);
-      console.log("[Crawler] Crawl result:", data);
+      if (buffer.trim()) {
+        try {
+          const event = JSON.parse(buffer) as
+            | { type: "result"; data: CrawlResult }
+            | { type: "error"; error: string };
+          if (event.type === "result") {
+            setCrawlResult(event.data);
+            setCrawlDurationMs(Date.now() - startMs);
+            setLiveCrawlResult(null);
+            setPagesCrawledCount(event.data.pages.length);
+          } else if (event.type === "error")
+            setCrawlError(event.error ?? "Crawl failed");
+        } catch {
+          /* ignore */
+        }
+      }
     } catch (err) {
-      const message = err instanceof Error ? err.message : "Crawl failed";
-      setCrawlError(message);
-      console.error("[Crawler] Crawl error:", err);
+      const isAbort = err instanceof Error && err.name === "AbortError";
+      if (!isAbort) {
+        setCrawlError(err instanceof Error ? err.message : "Crawl failed");
+        console.error("[Crawler] Crawl error:", err);
+      }
+      if (isAbort) setCrawlDurationMs(Date.now() - startMs);
     } finally {
+      abortControllerRef.current = null;
       setIsCrawling(false);
+      setCurrentCrawlPage(null);
+      setCurrentCrawlRoutes([]);
+      setLiveCrawlResult(null);
+      setCrawlStartTimeMs(null);
     }
-  }, [url, email, password]);
+  }, [url, email, password, maxPages, maxTime]);
 
   return (
     <CrawlerContext.Provider
@@ -93,13 +207,24 @@ export function CrawlerProvider({ children }: { children: ReactNode }) {
         url,
         email,
         password,
+        maxPages,
+        maxTime,
         setUrl,
         setEmail,
         setPassword,
+        setMaxPages,
+        setMaxTime,
         submit,
+        cancel,
         isCrawling,
         crawlResult,
+        liveCrawlResult,
         crawlError,
+        currentCrawlPage,
+        currentCrawlRoutes,
+        pagesCrawledCount,
+        crawlStartTimeMs,
+        crawlDurationMs,
       }}
     >
       {children}

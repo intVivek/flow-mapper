@@ -1,9 +1,11 @@
-import FlowMapper, { useCrawler } from "@/components/FlowMapper";
+"use client";
 
-export default function Page() {
+import { Form } from "@/components/FlowMapper";
+
+export default function HomePage() {
   return (
-    <div className="w-full h-full">
-      <FlowMapper />
+    <div className="min-h-full w-full">
+      <Form variant="standalone" />
     </div>
   );
 }

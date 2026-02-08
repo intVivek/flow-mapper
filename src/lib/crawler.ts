@@ -116,19 +116,24 @@ async function performLogin(
   }
 }
 
+export type CrawlProgressCallback = (currentPage: string, routes: string[]) => void;
+
 export async function crawl(
   startUrl: string,
   options?: {
     email?: string;
     password?: string;
     maxPages?: number;
+    maxTimeMs?: number;
+    onProgress?: CrawlProgressCallback;
   }
 ): Promise<CrawlResult> {
-  const { maxPages = 20, email, password } = options ?? {};
+  const { maxPages = 20, maxTimeMs, email, password, onProgress } = options ?? {};
   const pages: CrawlPage[] = [];
   const edgesMap = new Map<string, Set<string>>();
   const seenUrls = new Set<string>();
   const queue: string[] = [normalizeUrl(startUrl, startUrl)];
+  const startTime = Date.now();
 
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext();
@@ -146,6 +151,7 @@ export async function crawl(
     }
 
     while (queue.length > 0 && pages.length < maxPages) {
+      if (maxTimeMs && Date.now() - startTime >= maxTimeMs) break;
       const url = queue.shift()!;
       if (seenUrls.has(url)) continue;
       seenUrls.add(url);
@@ -206,14 +212,17 @@ export async function crawl(
         )
       );
 
+      const routes: string[] = [];
       for (const href of links) {
         const targetUrl = normalizeUrl(href, pageUrl);
         if (!isMeaningfulLink(href, pageUrl)) continue;
+        routes.push(targetUrl);
         addEdge(pageUrl, targetUrl);
         if (!seenUrls.has(targetUrl)) {
           queue.push(targetUrl);
         }
       }
+      onProgress?.(pageUrl, routes);
 
       await page.close();
     }

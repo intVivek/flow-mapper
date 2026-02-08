@@ -24,9 +24,14 @@ const nodeTypes: NodeTypes = {
 interface FlowCanvasProps {
   crawlResult: CrawlResult | null;
   startUrl?: string;
+  isCrawling?: boolean;
 }
 
-export function FlowCanvas({ crawlResult, startUrl }: FlowCanvasProps) {
+export function FlowCanvas({
+  crawlResult,
+  startUrl,
+  isCrawling,
+}: FlowCanvasProps) {
   const { nodes: initialNodes, edges: initialEdges } = useMemo(() => {
     if (!crawlResult || !crawlResult.pages.length) {
       return { nodes: [], edges: [] };
@@ -44,8 +49,20 @@ export function FlowCanvas({ crawlResult, startUrl }: FlowCanvasProps) {
 
   if (!crawlResult || !crawlResult.pages.length) {
     return (
-      <div className="flex h-full w-full items-center justify-center rounded-lg border border-dashed bg-muted/30">
-        <p className="text-muted-foreground text-sm">No flow data to display</p>
+      <div className="flex h-full w-full flex-col items-center justify-center gap-3 rounded-lg border border-dashed bg-muted/30">
+        {isCrawling ? (
+          <>
+            <span
+              className="size-8 rounded-full border-2 border-current border-t-transparent animate-spin text-muted-foreground"
+              aria-hidden
+            />
+            <p className="text-muted-foreground text-sm">Crawling…</p>
+          </>
+        ) : (
+          <p className="text-muted-foreground text-sm">
+            No flow data to display
+          </p>
+        )}
       </div>
     );
   }

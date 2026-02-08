@@ -5,11 +5,11 @@ import { Form } from "./Form";
 import Visualize from "./Visualize";
 
 function FlowResultView() {
-  const { crawlResult } = useCrawler();
+  const { crawlResult, isCrawling } = useCrawler();
 
   return (
     <div className="w-full h-full">
-      {crawlResult ? <Visualize /> : <Form />}
+      {isCrawling || crawlResult ? <Visualize /> : <Form />}
     </div>
   );
 }
