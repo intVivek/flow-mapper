@@ -45,10 +45,10 @@ export function CrawlerProvider({ children }: { children: ReactNode }) {
     setCrawlError(null);
     setCrawlResult(null);
     try {
-      setCrawlResult(
-        JSON.parse(JSON.stringify(SAMPLE_DATA_JSON)) as CrawlResult
-      );
-      return;
+      // setCrawlResult(
+      //   JSON.parse(JSON.stringify(SAMPLE_DATA_JSON)) as CrawlResult
+      // );
+      // return;
       const res = await fetch("/api/crawl", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
