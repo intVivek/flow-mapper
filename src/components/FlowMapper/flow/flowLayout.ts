@@ -27,17 +27,25 @@ function normalizeUrl(u: string): string {
 
 /**
  * Expand pages to include edge targets not yet in pages (subpages the crawler
- * found links to but didn't visit). This creates real hierarchy/depth.
+ * found links to but didn't visit). Uses normalized URLs as keys so that
+ * redirects (e.g. trailing slash vs no slash) don't create duplicate nodes.
  */
 function expandPagesWithEdgeTargets(
   pages: { url: string; title: string }[],
   allEdges: { from: string; to: string }[]
-): { url: string; title: string }[] {
-  const pageMap = new Map(pages.map((p) => [p.url, p]));
-  const originalIds = new Set(pages.map((p) => p.url));
+): { id: string; url: string; title: string }[] {
+  const pageMap = new Map<string, { url: string; title: string }>();
+  const originalNormIds = new Set(pages.map((p) => normalizeUrl(p.url)));
+  for (const p of pages) {
+    const nid = normalizeUrl(p.url);
+    if (!pageMap.has(nid)) pageMap.set(nid, { url: p.url, title: p.title });
+  }
   for (const e of allEdges) {
     if (pageMap.size >= MAX_NODES) break;
-    if (!pageMap.has(e.to) && e.from !== e.to && originalIds.has(e.from)) {
+    const normFrom = normalizeUrl(e.from);
+    const normTo = normalizeUrl(e.to);
+    if (normFrom === normTo) continue;
+    if (!pageMap.has(normTo) && originalNormIds.has(normFrom)) {
       const path = (() => {
         try {
           return new URL(e.to).pathname || e.to;
@@ -45,59 +53,63 @@ function expandPagesWithEdgeTargets(
           return e.to;
         }
       })();
-      pageMap.set(e.to, { url: e.to, title: path.slice(1) || "Home" });
+      pageMap.set(normTo, { url: e.to, title: path.slice(1) || "Home" });
     }
   }
-  return Array.from(pageMap.values());
+  return Array.from(pageMap.entries()).map(([id, p]) => ({ id, ...p }));
 }
 
 /**
- * BFS tree from root. Includes subpages (edge targets) for real hierarchy.
+ * BFS tree from root. Returns edges and the set of reachable node ids so we
+ * only render nodes that are connected (no dangling nodes).
  */
 function buildTreeEdges(
-  pages: { url: string; title: string }[],
+  expandedPages: { id: string; url: string; title: string }[],
   allEdges: { from: string; to: string }[],
   startUrl?: string
-): Edge[] {
-  const expandedPages = expandPagesWithEdgeTargets(pages, allEdges);
-  const pageIds = new Set(expandedPages.map((p) => p.url));
+): { edges: Edge[]; reachableIds: Set<string> } {
+  const pageIds = new Set(expandedPages.map((p) => p.id));
 
   const root = (() => {
     if (startUrl?.trim()) {
       const normStart = normalizeUrl(startUrl.trim());
-      const match = expandedPages.find((p) => normalizeUrl(p.url) === normStart);
-      if (match) return match.url;
+      const match = expandedPages.find((p) => p.id === normStart);
+      if (match) return match.id;
     }
-    return expandedPages[0]?.url ?? pages[0]?.url;
+    return expandedPages[0]?.id ?? null;
   })();
-  if (!root) return [];
+  if (!root) return { edges: [], reachableIds: new Set() };
 
-  const validEdges = allEdges.filter(
-    (e) => pageIds.has(e.from) && pageIds.has(e.to) && e.from !== e.to
-  );
+  const validEdges = allEdges.filter((e) => {
+    const normFrom = normalizeUrl(e.from);
+    const normTo = normalizeUrl(e.to);
+    return normFrom !== normTo && pageIds.has(normFrom) && pageIds.has(normTo);
+  });
 
   const treeEdges: Edge[] = [];
-  const visited = new Set<string>([root]);
+  const reachableIds = new Set<string>([root]);
   const queue = [root];
 
   while (queue.length > 0) {
     const from = queue.shift()!;
     for (const e of validEdges) {
-      if (e.from === from && !visited.has(e.to)) {
-        visited.add(e.to);
+      const normFrom = normalizeUrl(e.from);
+      const normTo = normalizeUrl(e.to);
+      if (normFrom === from && !reachableIds.has(normTo)) {
+        reachableIds.add(normTo);
         treeEdges.push({
-          id: `${e.from}->${e.to}`,
-          source: e.from,
-          target: e.to,
+          id: `${normFrom}->${normTo}`,
+          source: normFrom,
+          target: normTo,
           sourceHandle: "source",
           targetHandle: "target",
         });
-        queue.push(e.to);
+        queue.push(normTo);
       }
     }
   }
 
-  return treeEdges;
+  return { edges: treeEdges, reachableIds };
 }
 
 function crawlResultToFlowNodes(
@@ -105,16 +117,21 @@ function crawlResultToFlowNodes(
   startUrl?: string
 ): { nodes: Node<FlowNodeData>[]; edges: Edge[] } {
   const expandedPages = expandPagesWithEdgeTargets(result.pages, result.edges);
-  const nodes: Node<FlowNodeData>[] = expandedPages.map((page) => ({
-    id: page.url,
-    type: "flowNode",
-    position: { x: 0, y: 0 },
-    data: { url: page.url, title: page.title },
-    sourcePosition: Position.Right,
-    targetPosition: Position.Left,
-  }));
-
-  const edges = buildTreeEdges(expandedPages, result.edges, startUrl);
+  const { edges, reachableIds } = buildTreeEdges(
+    expandedPages,
+    result.edges,
+    startUrl
+  );
+  const nodes: Node<FlowNodeData>[] = expandedPages
+    .filter((page) => reachableIds.has(page.id))
+    .map((page) => ({
+      id: page.id,
+      type: "flowNode",
+      position: { x: 0, y: 0 },
+      data: { url: page.url, title: page.title },
+      sourcePosition: Position.Right,
+      targetPosition: Position.Left,
+    }));
 
   return { nodes, edges };
 }
