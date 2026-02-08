@@ -21,7 +21,7 @@ function FlowNodeComponent(props: NodeProps<Node<FlowNodeData, "flowNode">>) {
         id="target"
         type="target"
         position={Position.Left}
-        className="!h-2 !w-2 !border-2 !border-primary !bg-background"
+        className="!pointer-events-none !invisible !h-0 !w-0 !border-0"
       />
       <div className="min-w-0 flex-1">
         <p
@@ -38,7 +38,7 @@ function FlowNodeComponent(props: NodeProps<Node<FlowNodeData, "flowNode">>) {
         id="source"
         type="source"
         position={Position.Right}
-        className="!h-2 !w-2 !border-2 !border-primary !bg-background"
+        className="!pointer-events-none !invisible !h-0 !w-0 !border-0"
       />
     </div>
   );

@@ -68,7 +68,10 @@ export function FlowCanvas({
   }
 
   return (
-    <div className="h-full w-full rounded-lg border border-border bg-background">
+    <div
+      className="h-full w-full rounded-lg border border-border bg-background [--xy-background-color:var(--background)]"
+      style={{ backgroundColor: "hsl(var(--background))" }}
+    >
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -96,8 +99,10 @@ export function FlowCanvas({
         <Background gap={16} size={1} color="#e2e8f0" />
         <Controls />
         <MiniMap
-          nodeColor="hsl(var(--primary) / 0.2)"
-          maskColor="hsl(var(--background) / 0.8)"
+          nodeColor="#94a3b8"
+          nodeStrokeColor="#64748b"
+          bgColor="#ffffff"
+          maskColor="rgba(240, 240, 240, 0.75)"
         />
       </ReactFlow>
     </div>

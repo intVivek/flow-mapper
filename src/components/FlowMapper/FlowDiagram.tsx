@@ -9,9 +9,6 @@ export default function FlowDiagram() {
 
   return (
     <div className="flex h-full w-full flex-col gap-3">
-      <h2 className="text-lg font-medium">
-        Flow Diagram {isCrawling && "(live)"}
-      </h2>
       <div className="min-h-0 flex-1">
         <FlowCanvas
           crawlResult={displayResult}
