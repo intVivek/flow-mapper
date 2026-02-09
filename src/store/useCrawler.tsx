@@ -46,7 +46,7 @@ export function CrawlerProvider({ children }: { children: ReactNode }) {
   const [url, setUrl] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [maxPages, setMaxPages] = useState(20);
+  const [maxPages, setMaxPages] = useState(10);
   const [maxTime, setMaxTime] = useState(120);
   const [isCrawling, setIsCrawling] = useState(false);
   const [crawlResult, setCrawlResult] = useState<CrawlResult | null>(null);
@@ -138,9 +138,13 @@ export function CrawlerProvider({ children }: { children: ReactNode }) {
           try {
             const event = JSON.parse(line) as
               | { type: "progress"; page: string; routes: string[] }
+              | { type: "extracting"; message?: string }
               | { type: "result"; data: CrawlResult }
               | { type: "error"; error: string };
-            if (event.type === "progress") {
+            if (event.type === "extracting") {
+              setCurrentCrawlPage(null);
+              setCurrentCrawlRoutes([]);
+            } else if (event.type === "progress") {
               const page = event.page;
               const routes = event.routes ?? [];
               setCurrentCrawlPage(page);

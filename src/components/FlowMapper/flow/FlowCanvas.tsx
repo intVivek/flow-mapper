@@ -33,9 +33,10 @@ export function FlowCanvas({
   isCrawling,
 }: FlowCanvasProps) {
   const { nodes: initialNodes, edges: initialEdges } = useMemo(() => {
-    if (!crawlResult || !crawlResult.pages.length) {
-      return { nodes: [], edges: [] };
-    }
+    if (!crawlResult) return { nodes: [], edges: [] };
+    const hasFlows = crawlResult.flows && crawlResult.flows.length > 0;
+    const hasPages = crawlResult.pages.length > 0;
+    if (!hasFlows && !hasPages) return { nodes: [], edges: [] };
     return crawlResultToLayoutedFlow(crawlResult, startUrl);
   }, [crawlResult, startUrl]);
 
@@ -47,7 +48,10 @@ export function FlowCanvas({
     setEdges(initialEdges);
   }, [initialNodes, initialEdges, setNodes, setEdges]);
 
-  if (!crawlResult || !crawlResult.pages.length) {
+  const hasData =
+    crawlResult &&
+    ((crawlResult.flows?.length ?? 0) > 0 || crawlResult.pages.length > 0);
+  if (!hasData) {
     return (
       <div className="flex h-full w-full flex-col items-center justify-center gap-3 rounded-lg border border-dashed bg-muted/30">
         {isCrawling ? (

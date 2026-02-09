@@ -10,9 +10,19 @@ export interface CrawlEdge {
   to: string;
 }
 
+export interface UserFlow {
+  id: string;
+  title: string;
+  description?: string;
+  pageUrls: string[];
+}
+
 export interface CrawlResult {
   pages: CrawlPage[];
   edges: CrawlEdge[];
+  flows?: UserFlow[];
+  globalNavUrls?: string[];
+  denoisedEdges?: CrawlEdge[];
 }
 
 function getHostname(url: string): string {
@@ -56,6 +66,49 @@ function isMeaningfulLink(href: string, baseUrl: string): boolean {
   } catch {
     return false;
   }
+}
+
+const MAX_LINKS_PER_PAGE = 12;
+const MAX_PATH_DEPTH = 5;
+
+const GLOBAL_NAV_PATH_PATTERNS = /^\/(login|signin|signup|logout|register|terms|privacy|about|contact|help|faq|cookie)(\/|$)/i;
+
+function isLikelyGlobalNav(pathname: string): boolean {
+  return GLOBAL_NAV_PATH_PATTERNS.test(pathname);
+}
+
+function pathDepth(pathname: string): number {
+  const segments = pathname.split("/").filter(Boolean);
+  return segments.length;
+}
+
+function filterAndPrioritizeLinks(
+  links: string[],
+  pageUrl: string,
+  inboundCount: Map<string, number>,
+  pageCount: number
+): string[] {
+  const meaningful: string[] = [];
+  for (const href of links) {
+    const targetUrl = normalizeUrl(href, pageUrl);
+    if (!isMeaningfulLink(href, pageUrl)) continue;
+    try {
+      const path = new URL(targetUrl).pathname;
+      if (isLikelyGlobalNav(path)) continue;
+      if (pathDepth(path) > MAX_PATH_DEPTH) continue;
+      meaningful.push(targetUrl);
+    } catch {
+      continue;
+    }
+  }
+
+  const threshold = Math.max(2, Math.ceil(pageCount * 0.4));
+  const prioritized = meaningful.filter((url) => {
+    const count = inboundCount.get(normalizeUrl(url, pageUrl)) ?? 0;
+    return count < threshold;
+  });
+  const toUse = prioritized.length > 0 ? prioritized : meaningful;
+  return toUse.slice(0, MAX_LINKS_PER_PAGE);
 }
 
 async function performLogin(
@@ -128,9 +181,10 @@ export async function crawl(
     onProgress?: CrawlProgressCallback;
   }
 ): Promise<CrawlResult> {
-  const { maxPages = 20, maxTimeMs, email, password, onProgress } = options ?? {};
+  const { maxPages = 10, maxTimeMs, email, password, onProgress } = options ?? {};
   const pages: CrawlPage[] = [];
   const edgesMap = new Map<string, Set<string>>();
+  const inboundCount = new Map<string, number>();
   const seenUrls = new Set<string>();
   const queue: string[] = [normalizeUrl(startUrl, startUrl)];
   const startTime = Date.now();
@@ -212,14 +266,20 @@ export async function crawl(
         )
       );
 
+      const filtered = filterAndPrioritizeLinks(
+        links,
+        pageUrl,
+        inboundCount,
+        pages.length
+      );
       const routes: string[] = [];
-      for (const href of links) {
-        const targetUrl = normalizeUrl(href, pageUrl);
-        if (!isMeaningfulLink(href, pageUrl)) continue;
-        routes.push(targetUrl);
-        addEdge(pageUrl, targetUrl);
-        if (!seenUrls.has(targetUrl)) {
-          queue.push(targetUrl);
+      for (const targetUrl of filtered) {
+        const norm = normalizeUrl(targetUrl, pageUrl);
+        routes.push(norm);
+        addEdge(pageUrl, norm);
+        inboundCount.set(norm, (inboundCount.get(norm) ?? 0) + 1);
+        if (!seenUrls.has(norm)) {
+          queue.push(norm);
         }
       }
       onProgress?.(pageUrl, routes);

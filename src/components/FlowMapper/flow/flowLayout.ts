@@ -112,14 +112,77 @@ function buildTreeEdges(
   return { edges: treeEdges, reachableIds };
 }
 
+/**
+ * Build graph from LLM-extracted flows only. Each flow defines a sequential
+ * path: pageUrls[0] -> pageUrls[1] -> ... Edges are only between consecutive pages.
+ */
+function flowsToFlowNodes(
+  result: CrawlResult,
+  flows: { id: string; title: string; pageUrls: string[] }[]
+): { nodes: Node<FlowNodeData>[]; edges: Edge[] } {
+  const pageMap = new Map<string, { url: string; title: string }>();
+  for (const p of result.pages) {
+    const nid = normalizeUrl(p.url);
+    pageMap.set(nid, { url: p.url, title: p.title });
+  }
+
+  const allEdges: Edge[] = [];
+  const nodeIds = new Set<string>();
+
+  for (const flow of flows) {
+    const urls = flow.pageUrls.map((u) => normalizeUrl(u)).filter((u) => u);
+    for (let i = 0; i < urls.length; i++) {
+      nodeIds.add(urls[i]);
+      if (i > 0 && urls[i - 1] !== urls[i]) {
+        allEdges.push({
+          id: `${urls[i - 1]}->${urls[i]}-${flow.id}`,
+          source: urls[i - 1],
+          target: urls[i],
+          sourceHandle: "source",
+          targetHandle: "target",
+        });
+      }
+    }
+  }
+
+  const nodes: Node<FlowNodeData>[] = Array.from(nodeIds).map((id) => {
+    const p = pageMap.get(id);
+    const title = p?.title ?? (() => {
+      try {
+        const path = new URL(id).pathname;
+        return path === "/" ? "/" : path.replace(/\/$/, "") || id;
+      } catch {
+        return id;
+      }
+    })();
+    return {
+      id,
+      type: "flowNode",
+      position: { x: 0, y: 0 },
+      data: { url: p?.url ?? id, title },
+      sourcePosition: Position.Right,
+      targetPosition: Position.Left,
+    };
+  });
+
+  return { nodes, edges: allEdges };
+}
+
 function crawlResultToFlowNodes(
   result: CrawlResult,
   startUrl?: string
 ): { nodes: Node<FlowNodeData>[]; edges: Edge[] } {
-  const expandedPages = expandPagesWithEdgeTargets(result.pages, result.edges);
+  if (result.flows && result.flows.length > 0) {
+    return flowsToFlowNodes(result, result.flows);
+  }
+
+  const edgesToUse = result.denoisedEdges && result.denoisedEdges.length > 0
+    ? result.denoisedEdges
+    : result.edges;
+  const expandedPages = expandPagesWithEdgeTargets(result.pages, edgesToUse);
   const { edges, reachableIds } = buildTreeEdges(
     expandedPages,
-    result.edges,
+    edgesToUse,
     startUrl
   );
   const nodes: Node<FlowNodeData>[] = expandedPages

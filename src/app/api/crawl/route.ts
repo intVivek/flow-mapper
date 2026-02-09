@@ -1,4 +1,5 @@
 import { crawl } from "@/lib/crawler";
+import { extractFlowsWithLLM } from "@/lib/extractFlows";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -20,7 +21,7 @@ export async function POST(request: Request) {
 
   const maxPages = Math.min(
     200,
-    Math.max(1, typeof bodyMaxPages === "number" ? bodyMaxPages : 20)
+    Math.max(1, typeof bodyMaxPages === "number" ? bodyMaxPages : 10)
   );
   const maxTimeSec =
     typeof bodyMaxTime === "number" ? Math.max(10, Math.min(3600, bodyMaxTime)) : undefined;
@@ -43,7 +44,17 @@ export async function POST(request: Request) {
           send({ type: "progress", page, routes });
         },
       });
-      send({ type: "result", data: result });
+
+      send({ type: "extracting", message: "Extracting user flows with AI…" });
+
+      const extraction = await extractFlowsWithLLM(result, { startUrl: url });
+      const finalResult = {
+        ...result,
+        flows: extraction?.flows ?? [],
+        globalNavUrls: extraction?.globalNavUrls ?? [],
+        denoisedEdges: extraction?.denoisedEdges ?? result.edges,
+      };
+      send({ type: "result", data: finalResult });
     } catch (err) {
       console.error("Crawl error:", err);
       send({
