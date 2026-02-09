@@ -41,6 +41,8 @@ export function Form({ variant = "standalone" }: FormProps) {
     crawlResult,
     crawlStartTimeMs,
     crawlDurationMs,
+    flowGenerateStatus,
+    flowGenerateError,
   } = useCrawler();
 
   const isSidebar = variant === "sidebar";
@@ -216,9 +218,9 @@ export function Form({ variant = "standalone" }: FormProps) {
               {currentCrawlRoutes.length > 0 && (
                 <div>
                   <p className="text-xs font-medium text-muted-foreground mb-1">
-                    Routes on this page ({currentCrawlRoutes.length})
+                    Meaningful routes on this page ({currentCrawlRoutes.length})
                   </p>
-                  <ul className="max-h-48 overflow-y-auto list-disc list-inside space-y-0.5 text-xs text-muted-foreground">
+                  <ul className="max-h-24 overflow-y-auto list-disc list-inside space-y-0.5 text-xs text-muted-foreground">
                     {currentCrawlRoutes.map((r, i) => (
                       <li key={`${i}-${r}`} className="truncate" title={r}>
                         {pathOnly(r)}
@@ -266,6 +268,72 @@ export function Form({ variant = "standalone" }: FormProps) {
                   </dd>
                 </div>
               </dl>
+            </CardContent>
+          </Card>
+        )}
+
+        {(isCrawling || crawlResult != null || flowGenerateError != null) && (
+          <Card
+            className={`overflow-hidden ${
+              flowGenerateStatus === "success"
+                ? "border-green-500/30 bg-green-500/10"
+                : flowGenerateStatus === "error"
+                ? "border-destructive/30 bg-destructive/10"
+                : flowGenerateStatus === "progress"
+                ? "border-primary/20 bg-primary/5"
+                : "border-muted bg-muted/30"
+            }`}
+          >
+            <CardContent className="">
+              <h3 className="text-xs font-semibold uppercase tracking-wider mb-[2px]  text-muted-foreground">
+                Generate flow progress{" "}
+              </h3>
+              <div className="text-[10px] mb-1 text-muted-foreground">
+                (Groq llama-3.1)
+              </div>
+              {flowGenerateStatus === "pending" && (
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <span
+                    className="size-3 shrink-0 rounded-full bg-muted-foreground/30"
+                    aria-hidden
+                  />
+                  <span>Pending</span>
+                </div>
+              )}
+              {flowGenerateStatus === "progress" && (
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <span
+                    className="size-3 shrink-0 rounded-full border-2 border-current border-t-transparent animate-spin"
+                    aria-hidden
+                  />
+                  <span>In progress — extracting user flows with AI…</span>
+                </div>
+              )}
+              {flowGenerateStatus === "success" && (
+                <div className="flex items-center gap-2 text-sm text-green-700 dark:text-green-400">
+                  <span
+                    className="size-3 shrink-0 rounded-full bg-green-500"
+                    aria-hidden
+                  />
+                  <span>Success</span>
+                </div>
+              )}
+              {flowGenerateStatus === "error" && (
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2 text-sm text-destructive">
+                    <span
+                      className="size-3 shrink-0 rounded-full bg-destructive"
+                      aria-hidden
+                    />
+                    <span>Error</span>
+                  </div>
+                  {flowGenerateError && (
+                    <p className="text-xs text-muted-foreground">
+                      {flowGenerateError}
+                    </p>
+                  )}
+                </div>
+              )}
             </CardContent>
           </Card>
         )}

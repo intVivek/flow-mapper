@@ -9,6 +9,7 @@ import {
   MarkerType,
   useNodesState,
   useEdgesState,
+  useReactFlow,
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 import type { FlowNodeData } from "./flowLayout";
@@ -20,6 +21,24 @@ import type { NodeTypes } from "@xyflow/react";
 const nodeTypes: NodeTypes = {
   flowNode: FlowNode as NodeTypes["flowNode"],
 };
+
+const FIT_VIEW_PADDING = 0.2;
+
+/** Calls fitView when nodes/edges change so the canvas zooms to fit (e.g. after final flow is set). */
+function FitViewOnChange() {
+  const { fitView, getNodes } = useReactFlow();
+  const nodes = getNodes();
+
+  useEffect(() => {
+    if (nodes.length === 0) return;
+    const t = setTimeout(() => {
+      fitView({ padding: FIT_VIEW_PADDING, duration: 200 });
+    }, 100);
+    return () => clearTimeout(t);
+  }, [fitView, nodes.length, nodes.map((n) => n.id).join(",")]);
+
+  return null;
+}
 
 interface FlowCanvasProps {
   crawlResult: CrawlResult | null;
@@ -37,8 +56,11 @@ export function FlowCanvas({
     const hasFlows = crawlResult.flows && crawlResult.flows.length > 0;
     const hasPages = crawlResult.pages.length > 0;
     if (!hasFlows && !hasPages) return { nodes: [], edges: [] };
-    return crawlResultToLayoutedFlow(crawlResult, startUrl);
-  }, [crawlResult, startUrl]);
+    const flowTitlesChain = !isCrawling && !!hasFlows;
+    return crawlResultToLayoutedFlow(crawlResult, startUrl, {
+      flowTitlesChain,
+    });
+  }, [crawlResult, startUrl, isCrawling]);
 
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
@@ -100,6 +122,7 @@ export function FlowCanvas({
         defaultViewport={{ x: 0, y: 0, zoom: 1 }}
         proOptions={{ hideAttribution: true }}
       >
+        <FitViewOnChange />
         <Background gap={16} size={1} color="#e2e8f0" />
         <Controls />
         <MiniMap

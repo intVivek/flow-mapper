@@ -10,6 +10,8 @@ import {
 } from "react";
 import type { CrawlResult } from "@/lib/crawler";
 
+export type FlowGenerateStatus = "pending" | "progress" | "success" | "error";
+
 export interface CrawlerState {
   url: string;
   email: string;
@@ -38,6 +40,8 @@ interface CrawlerContextValue {
   pagesCrawledCount: number;
   crawlStartTimeMs: number | null;
   crawlDurationMs: number | null;
+  flowGenerateStatus: FlowGenerateStatus;
+  flowGenerateError: string | null;
 }
 
 const CrawlerContext = createContext<CrawlerContextValue | null>(null);
@@ -59,6 +63,11 @@ export function CrawlerProvider({ children }: { children: ReactNode }) {
   const [pagesCrawledCount, setPagesCrawledCount] = useState(0);
   const [crawlStartTimeMs, setCrawlStartTimeMs] = useState<number | null>(null);
   const [crawlDurationMs, setCrawlDurationMs] = useState<number | null>(null);
+  const [flowGenerateStatus, setFlowGenerateStatus] =
+    useState<FlowGenerateStatus>("pending");
+  const [flowGenerateError, setFlowGenerateError] = useState<string | null>(
+    null
+  );
   const abortControllerRef = useRef<AbortController | null>(null);
 
   const cancel = useCallback(() => {
@@ -71,6 +80,8 @@ export function CrawlerProvider({ children }: { children: ReactNode }) {
     setCurrentCrawlRoutes([]);
     setIsCrawling(false);
     setCrawlStartTimeMs(null);
+    setFlowGenerateStatus("pending");
+    setFlowGenerateError(null);
   }, []);
 
   function pageTitleFromUrl(pageUrl: string): string {
@@ -92,6 +103,8 @@ export function CrawlerProvider({ children }: { children: ReactNode }) {
     const startMs = Date.now();
     setCrawlDurationMs(null);
     setCrawlStartTimeMs(startMs);
+    setFlowGenerateStatus("pending");
+    setFlowGenerateError(null);
     setLiveCrawlResult({ pages: [], edges: [] });
     setCurrentCrawlPage(null);
     setCurrentCrawlRoutes([]);
@@ -120,6 +133,8 @@ export function CrawlerProvider({ children }: { children: ReactNode }) {
           /* ignore */
         }
         setCrawlError(errMsg);
+        setFlowGenerateStatus("error");
+        setFlowGenerateError(errMsg);
         setLiveCrawlResult(null);
         setIsCrawling(false);
         return;
@@ -139,11 +154,12 @@ export function CrawlerProvider({ children }: { children: ReactNode }) {
             const event = JSON.parse(line) as
               | { type: "progress"; page: string; routes: string[] }
               | { type: "extracting"; message?: string }
-              | { type: "result"; data: CrawlResult }
+              | { type: "result"; data: CrawlResult; flowExtractError?: string }
               | { type: "error"; error: string };
             if (event.type === "extracting") {
               setCurrentCrawlPage(null);
               setCurrentCrawlRoutes([]);
+              setFlowGenerateStatus("progress");
             } else if (event.type === "progress") {
               const page = event.page;
               const routes = event.routes ?? [];
@@ -163,9 +179,18 @@ export function CrawlerProvider({ children }: { children: ReactNode }) {
             } else if (event.type === "result") {
               setCrawlResult(event.data);
               setCrawlDurationMs(Date.now() - startMs);
+              if (event.flowExtractError) {
+                setFlowGenerateStatus("error");
+                setFlowGenerateError(event.flowExtractError);
+              } else {
+                setFlowGenerateStatus("success");
+                setFlowGenerateError(null);
+              }
               console.log("[Crawler] Crawl result:", event.data);
             } else if (event.type === "error") {
               setCrawlError(event.error ?? "Crawl failed");
+              setFlowGenerateStatus("error");
+              setFlowGenerateError(event.error ?? "Crawl failed");
             }
           } catch {
             /* skip malformed line */
@@ -175,15 +200,25 @@ export function CrawlerProvider({ children }: { children: ReactNode }) {
       if (buffer.trim()) {
         try {
           const event = JSON.parse(buffer) as
-            | { type: "result"; data: CrawlResult }
+            | { type: "result"; data: CrawlResult; flowExtractError?: string }
             | { type: "error"; error: string };
           if (event.type === "result") {
             setCrawlResult(event.data);
             setCrawlDurationMs(Date.now() - startMs);
+            if (event.flowExtractError) {
+              setFlowGenerateStatus("error");
+              setFlowGenerateError(event.flowExtractError);
+            } else {
+              setFlowGenerateStatus("success");
+              setFlowGenerateError(null);
+            }
             setLiveCrawlResult(null);
             setPagesCrawledCount(event.data.pages.length);
-          } else if (event.type === "error")
+          } else if (event.type === "error") {
             setCrawlError(event.error ?? "Crawl failed");
+            setFlowGenerateStatus("error");
+            setFlowGenerateError(event.error ?? "Crawl failed");
+          }
         } catch {
           /* ignore */
         }
@@ -191,7 +226,10 @@ export function CrawlerProvider({ children }: { children: ReactNode }) {
     } catch (err) {
       const isAbort = err instanceof Error && err.name === "AbortError";
       if (!isAbort) {
-        setCrawlError(err instanceof Error ? err.message : "Crawl failed");
+        const msg = err instanceof Error ? err.message : "Crawl failed";
+        setCrawlError(msg);
+        setFlowGenerateStatus("error");
+        setFlowGenerateError(msg);
         console.error("[Crawler] Crawl error:", err);
       }
       if (isAbort) setCrawlDurationMs(Date.now() - startMs);
@@ -229,6 +267,8 @@ export function CrawlerProvider({ children }: { children: ReactNode }) {
         pagesCrawledCount,
         crawlStartTimeMs,
         crawlDurationMs,
+        flowGenerateStatus,
+        flowGenerateError,
       }}
     >
       {children}

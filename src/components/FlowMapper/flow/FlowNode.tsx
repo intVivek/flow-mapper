@@ -15,8 +15,16 @@ function FlowNodeComponent(props: NodeProps<Node<FlowNodeData, "flowNode">>) {
     }
   }
 
+  const titleOnly = data.titleOnly === true;
+
   return (
-    <div className="relative flex h-12 w-[220px] items-center rounded-lg border border-border bg-card px-3 py-2 shadow-sm">
+    <div
+      className={
+        titleOnly
+          ? "relative flex h-12 w-[220px] items-center rounded-lg border-2 border-primary bg-primary/15 px-3 py-2 shadow-sm"
+          : "relative flex h-12 w-[220px] items-center rounded-lg border border-border bg-card px-3 py-2 shadow-sm"
+      }
+    >
       <Handle
         id="target"
         type="target"
@@ -25,14 +33,23 @@ function FlowNodeComponent(props: NodeProps<Node<FlowNodeData, "flowNode">>) {
       />
       <div className="min-w-0 flex-1">
         <p
-          className="truncate text-sm font-medium text-card-foreground"
+          className={
+            titleOnly
+              ? "truncate text-sm font-medium text-primary"
+              : "truncate text-sm font-medium text-card-foreground"
+          }
           title={displayTitle}
         >
           {displayTitle}
         </p>
-        <p className="truncate text-xs text-muted-foreground" title={data.url}>
-          {data.url}
-        </p>
+        {!titleOnly && (
+          <p
+            className="truncate text-xs text-muted-foreground"
+            title={data.url}
+          >
+            {data.url}
+          </p>
+        )}
       </div>
       <Handle
         id="source"

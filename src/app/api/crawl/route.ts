@@ -48,13 +48,20 @@ export async function POST(request: Request) {
       send({ type: "extracting", message: "Extracting user flows with AI…" });
 
       const extraction = await extractFlowsWithLLM(result, { startUrl: url });
+      const hasExtraction = extraction != null && !("error" in extraction);
       const finalResult = {
         ...result,
-        flows: extraction?.flows ?? [],
-        globalNavUrls: extraction?.globalNavUrls ?? [],
-        denoisedEdges: extraction?.denoisedEdges ?? result.edges,
+        flows: hasExtraction ? extraction.flows ?? [] : [],
+        globalNavUrls: hasExtraction ? extraction.globalNavUrls ?? [] : [],
+        denoisedEdges: hasExtraction ? extraction.denoisedEdges ?? result.edges : result.edges,
       };
-      send({ type: "result", data: finalResult });
+      const flowExtractError =
+        extraction == null
+          ? "Flow extraction failed (missing API key or no data)"
+          : "error" in extraction
+            ? extraction.error
+            : undefined;
+      send({ type: "result", data: finalResult, flowExtractError });
     } catch (err) {
       console.error("Crawl error:", err);
       send({

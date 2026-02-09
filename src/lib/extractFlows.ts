@@ -182,13 +182,17 @@ Respond with this exact JSON structure only. Use paths (e.g. "/pricing", "/") no
 }`;
 }
 
+export type FlowExtractionOutcome =
+  | FlowExtractionResult
+  | { error: string };
+
 export async function extractFlowsWithLLM(
   result: CrawlResult,
   options?: {
     apiKey?: string;
     startUrl?: string;
   }
-): Promise<FlowExtractionResult | null> {
+): Promise<FlowExtractionOutcome | null> {
   const apiKey = options?.apiKey ?? process.env.GROQ_API_KEY;
   if (!apiKey) {
     console.warn("[extractFlows] GROQ_API_KEY not set, skipping LLM flow extraction");
@@ -250,6 +254,7 @@ export async function extractFlowsWithLLM(
     return { flows, globalNavUrls, denoisedEdges };
   } catch (err) {
     console.error("[extractFlows] LLM error:", err);
-    return null;
+    const message = err instanceof Error ? err.message : "LLM flow extraction failed";
+    return { error: message };
   }
 }

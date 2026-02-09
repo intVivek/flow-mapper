@@ -10,6 +10,8 @@ const MAX_NODES = 80;
 export interface FlowNodeData extends Record<string, unknown> {
   url: string;
   title: string;
+  /** When true, node shows only the title (no URL). Used for flow-title chain. */
+  titleOnly?: boolean;
 }
 
 function normalizeUrl(u: string): string {
@@ -113,6 +115,38 @@ function buildTreeEdges(
 }
 
 /**
+ * Build a single chain where each node is one flow (by title). Order: flows[0] -> flows[1] -> ...
+ * Used when crawl is completed to show user flows as one chain with only titles.
+ */
+function flowsToTitleChainNodes(
+  flows: { id: string; title: string; pageUrls: string[] }[]
+): { nodes: Node<FlowNodeData>[]; edges: Edge[] } {
+  if (flows.length === 0) return { nodes: [], edges: [] };
+
+  const nodes: Node<FlowNodeData>[] = flows.map((flow) => ({
+    id: flow.id,
+    type: "flowNode",
+    position: { x: 0, y: 0 },
+    data: { url: "", title: flow.title, titleOnly: true },
+    sourcePosition: Position.Right,
+    targetPosition: Position.Left,
+  }));
+
+  const edges: Edge[] = [];
+  for (let i = 0; i < flows.length - 1; i++) {
+    edges.push({
+      id: `flow-${flows[i].id}->${flows[i + 1].id}`,
+      source: flows[i].id,
+      target: flows[i + 1].id,
+      sourceHandle: "source",
+      targetHandle: "target",
+    });
+  }
+
+  return { nodes, edges };
+}
+
+/**
  * Build graph from LLM-extracted flows only. Each flow defines a sequential
  * path: pageUrls[0] -> pageUrls[1] -> ... Edges are only between consecutive pages.
  */
@@ -170,9 +204,13 @@ function flowsToFlowNodes(
 
 function crawlResultToFlowNodes(
   result: CrawlResult,
-  startUrl?: string
+  startUrl?: string,
+  options?: { flowTitlesChain?: boolean }
 ): { nodes: Node<FlowNodeData>[]; edges: Edge[] } {
   if (result.flows && result.flows.length > 0) {
+    if (options?.flowTitlesChain) {
+      return flowsToTitleChainNodes(result.flows);
+    }
     return flowsToFlowNodes(result, result.flows);
   }
 
@@ -229,11 +267,12 @@ function getLayoutedElements(nodes: Node<FlowNodeData>[], edges: Edge[]) {
 
 export function crawlResultToLayoutedFlow(
   result: CrawlResult,
-  startUrl?: string
+  startUrl?: string,
+  options?: { flowTitlesChain?: boolean }
 ): {
   nodes: Node<FlowNodeData>[];
   edges: Edge[];
 } {
-  const { nodes, edges } = crawlResultToFlowNodes(result, startUrl);
+  const { nodes, edges } = crawlResultToFlowNodes(result, startUrl, options);
   return getLayoutedElements(nodes, edges);
 }
